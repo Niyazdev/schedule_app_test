@@ -123,15 +123,11 @@ class ScheduleScreen extends StatelessWidget {
               ),
             ),
           ),
-          child: BlocBuilder<ScheduleCubit, ScheduleState>(
-            builder: (_, state) {
-              return Text(
-                'Save',
-                style: Theme.of(context).textTheme.headline6!.copyWith(
-                      color: Colors.white,
-                    ),
-              );
-            },
+          child: Text(
+            'Save',
+            style: Theme.of(context).textTheme.headline6!.copyWith(
+                  color: Colors.white,
+                ),
           ),
         )
       ],
